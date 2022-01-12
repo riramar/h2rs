@@ -16,7 +16,6 @@ Detects request smuggling via HTTP/2 downgrades.
 * certifi
 * h2.connection
 * h2.events
-* argparse
 
 # Install
 
