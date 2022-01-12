@@ -29,6 +29,5 @@ setuptools.setup(
     install_requires=[
         'certifi',
         'h2',
-        'argparse',
     ],
 )
