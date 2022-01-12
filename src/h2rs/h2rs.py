@@ -12,6 +12,7 @@ import certifi
 import h2.connection
 import h2.events
 from h2.exceptions import InvalidBodyLengthError
+import argparse
 
 def request(request_headers, request_body):
 	# generic socket and ssl configuration
