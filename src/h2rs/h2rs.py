@@ -118,7 +118,7 @@ def h2cl_detect():
 
 	response3 = request(request_headers, request_body)
 
-	if response1['socket_timeout'] == False and response2['socket_timeout'] == True and str(response3['error_code']) == 'ErrorCodes.INTERNAL_ERROR':
+	if response1['socket_timeout'] == False and response2['socket_timeout'] == True and (str(response3['error_code']) == 'ErrorCodes.INTERNAL_ERROR' or response3['response_headers'][0][1] == b'400'):
 		return True
 	else:
 		return False
